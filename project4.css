@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Lobster Two", sans-serif; 
+}
+.contain{
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color:transparent;
+    padding:29px 40px;
+    width:100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+nav a{
+    position: relative;
+    padding: 10px 55px;
+    text-decoration: none;
+    margin: 5px;;
+    color: white;
+    border-radius: 5px;
+    /* border:2px solid black; */
+    /* background-color: rgb(133, 133, 230); */
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height:2px;
+    background-color: white;
+    border-radius: 5px;
+    bottom: -6px;
+    opacity: 0;
+    transition:transform 0.5s ;
+}
+nav a:hover::after{
+    transform: translateY(-8px);
+    opacity:1;
+
+}
+.type1{
+    width:100%;
+    height: 34px;
+    padding:0px 9px;
+    /* border-radius: 5px; */
+    background: transparent;
+    font-size: 20px;
+    border:none;
+    outline: none;
+
+}
+/* .image::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     z-index: -1;
+     opacity:3;
+     top:0px;
+     left:0px;
+    background: url(m.jpg/bestsy.jpg) no-repeat center center/cover;
+   
+} */
+/*  to create a search box      */
+ .form1  button { 
+height:100%;
+width:45px;
+padding:4px 0px;
+border: none;
+background: transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+} 
+
+
+.form1{
+    width:250px;
+    height:45px;
+    background: transparent;
+    border:2px solid white;
+    display:flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.form1  button i{
+    font-size: 22px;
+    color:rgb(128, 123, 123)
+
+}
+body{
+    width:100%;
+    height:100vh;
+    background: url(m.jpg/sunset2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur();
+    overflow: hidden;
+}
+.container{
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:75%;
+    height:600px;
+    background:url(m.jpg/sunset2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    outline: none;
+
+}
+.content{
+    position:absolute;
+    top:0;
+    left:0;
+    width:58%;
+    height:100%;
+    background:transparent;
+    color:white;
+    display:flex;
+    flex-direction: column;
+   
+
+}
+.h1{
+    padding:30px;
+    font-size: 36px;
+}
+.h2{
+    margin-top:100px;
+    padding:30px;
+    font-size: 30px;
+}
+.h22{
+    padding:10px 30px;
+
+}
+.p{
+     padding:10px 30px; 
+     font-size: 16px;;
+}
+.social-icon{
+    padding:10px 30px;
+}
+.social-icon i{
+    font-size:26px;
+    margin-right: 19px;
+    
+}
+.social-icon i:hover{
+    transform:scale(1.6);
+    
+}
+.logleg{
+    position:absolute;
+    top:0;
+    right:0;
+    width:42%;
+    height:100%;
+    background: transparent;
+}
+.formlogin{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter:blur(20px);
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    color:white;
+    overflow: hidden;
+    border: 2px solid;
+    transition:transform 0.2s;
+    transition-delay: 0.3s;
+}
+.formloginreg{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter:blur(20px);
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    border: 2px solid;
+    color:white;
+    transform: translateX(0px);
+    overflow: hidden;
+    transition:transform 0.2s;
+    transition-delay: 0.3s;
+}
+.formlogin h2{
+    font-size: 32px;
+    text-align: center;
+}
+.formloginreg h2{
+    font-size: 32px;
+    text-align: center;
+}
+.formlogin .inputbox{
+    position: relative;
+    width:340px;
+    height:50px;
+    border-bottom: 3px solid white;
+    margin:30px 0;
+
+}
+
+.formloginreg .inputbox{
+    position: relative;
+    width:340px;
+    height:50px;
+    border-bottom: 3px solid white;
+    margin:30px 0;
+}
+.inputbox input{
+    background: transparent;
+    border: none;
+    width:100%;
+    height:100%;
+    outline:none;
+    font-size: 18px;
+    color:white;
+}
+.inputbox label{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    pointer-events: none;
+    font-size: 19px;
+    transition: .5s ease;
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top:-5px;
+}
+
+
+.inputbox .iconn{
+    position: absolute;
+    right:0;
+    top:13px;
+    font-size: 19px;
+}
+.remember{
+    font-size: 18px;
+    margin:14px 0px;
+    font-weight: 500;
+     display:flex;
+     justify-content: space-between;
+    
+} 
+.rema{
+    text-decoration: none;
+    color:white;
+}
+.btn{
+    margin:10px 0px;
+    width:100%;
+    height:29px;
+    box-shadow:0px 3px 2px ;
+    font-size:16px;
+    cursor:pointer;
+    background-color: rgb(171, 8, 8);
+}
+.rema:hover{
+    text-decoration: underline;
+}
+.remember  label input{
+    margin-right: 7px;
+}
+.login-register{
+    font-size:17px;
+    text-align: center;
+}
+.login-register p a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.wrapper{
+    /* transform: translateX(550px); */
+    left:800px;
+
+   
+    overflow:hidden;
+    /* left:0; */
+}
+ 
+
